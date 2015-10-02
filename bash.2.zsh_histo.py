@@ -1,5 +1,13 @@
+# import bash_history to zsh_history
+# DJR 01/10/2015
+#
+# usage : python3 bash.2.zsh_histo.py [.bash_history]
+#
+#--------------------------------------------------------------------------------------
+#
 import sys, os.path, time
 
+# use 1er parameter if exist else use current user bash_history
 if len(sys.argv)>1:
   bashhisto = sys.argv[1]
 else:
